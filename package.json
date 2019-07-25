@@ -1,0 +1,40 @@
+{
+  "name": "maker-goals-menubar",
+  "version": "1.0.0",
+  "description": "Manage your goals from your desktop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "build": "cd client && yarn && yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feriforgacs/producthunt-maker-goals-menubar.git"
+  },
+  "keywords": [
+    "producthunt",
+    "graphql",
+    "react",
+    "apollo",
+    "node",
+    "maker goals menubar",
+    "maker goals"
+  ],
+  "author": "Feri Forgacs @feriforgacs",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^7.0.0",
+    "es6-promise": "^4.2.6",
+    "express": "^4.16.4",
+    "https": "^1.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "engines": {
+    "node": "12.3.1"
+  }
+}

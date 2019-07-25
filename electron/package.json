@@ -1,0 +1,62 @@
+{
+  "name": "maker-goals-menubar",
+  "productName": "Maker Goals Menubar",
+  "version": "1.0.0",
+  "description": "With the help of Maker Goals Menubar, you can easily manage your goals on Product Hunt from your desktop.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "com.maker.goals.menubar",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "build/icon.icns"
+    }
+  },
+  "keywords": [
+    "produthunt",
+    "makers",
+    "makergoals",
+    "maker",
+    "goals",
+    "menubar"
+  ],
+  "author": {
+    "name": "Feri Forgacs @feriforgacs",
+    "email": "forgacsf@gmail.com"
+  },
+  "homepage": "https://trymakergoals.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^5.0.3",
+    "electron-builder": "^20.43.0",
+    "electron-packager": "^13.1.1",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
