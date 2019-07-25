@@ -35,7 +35,7 @@ To test the electron application, first, edit the url in your electron/main.js f
 If everyting was fine, your electron app should start in a few seconds.
 
 ### The whole process with commands (after you created your PH Application and created your .env file):
-`
+```
 git clone https://github.com/feriforgacs/producthunt-maker-goals-menubar.git
 cd producthunt-maker-goals-menubar/ && npm install
 cd client/ && npm install
@@ -43,14 +43,14 @@ cd .. && cd electron/ && npm install
 cd .. && npm run build
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.cert
 npm start
-`
+```
 
 ### To test the electron app
 Keep your node server tunning, in a new terminal window:
-`
+```
 cd electron/
 npm start
-`
+```
 
 # Run the app on a Heroku
 To run the application on Heroku, follow these instructions: [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
