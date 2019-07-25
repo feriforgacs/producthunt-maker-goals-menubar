@@ -1,4 +1,4 @@
-![Maker Goals Menubar Screens](images/maker-goals-menubar.jpg)
+![Maker Goals Menubar Screens](_images/maker-goals-menubar.jpg)
 
 # About
 Maker Goals Menubar was created to help you manage your goals on Product Hunt. It was built as part of the [Makers Festival - The 'API Edition'](https://www.producthunt.com/makers-festival/product-hunt-api-2-0) and became the winner of the Desktop category.
