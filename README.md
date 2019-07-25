@@ -1,3 +1,5 @@
+![Maker Goals Menubar Screens](images/maker-goals-menubar.jpg)
+
 # About
 Maker Goals Menubar was created to help you manage your goals on Product Hunt. It was built as part of the [Makers Festival - The 'API Edition'](https://www.producthunt.com/makers-festival/product-hunt-api-2-0) and became the winner of the Desktop category.
 This was my first Node, React, GraphQL, Electron application so I'm pretty sure there are a lot of things to improve. Feel free to contribute 😊
