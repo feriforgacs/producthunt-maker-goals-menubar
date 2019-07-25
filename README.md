@@ -17,13 +17,25 @@ If you would like to give the application a try you can download the latest rele
 
 # The structure of the app
 Root folder: node server that handles the auth process and graphql requests.
-Client folder: 
-Electron folder: 
+Client folder: files of the react application
+Electron folder: files of the electron application
+
+# How does it work?
+The live version of the application runs on Heroku, the electron app is just a wrapper that loads the Heroku URL. Why? This is how I was able to manage the authentication flow.
 
 # Set up a development environment
-clone repo
-npm - generate frontend
-npm - server
+First of all, you'll need to create a Product Hunt application to be able to use their API. Visit the following URL to add a new application: [Product Hunt Application Dashboard](https://api.producthunt.com/v2/oauth/applications). By default all apps are read-only. If you need write access, you should get in touch with the Product Hunt team at hello@producthunt.com. Read more about the possibilities in their [API docs](https://api.producthunt.com/v2/docs).
+Clone this repository and make a copy of the .env.sample file, without the .sample ending. Add your API Key and API Secret to the newly created .env file and save it.
+Open up your terminal and `cd` to the root folder of the repository. Install the necessary node modules by running `npm install`. Go to the client directory and run `npm install` there as well. Do the same in your electron folder.
+Change the folder back to the root directory and run `npm build` to build the frontend of the application.
+Start your server with the `npm start` command than visit https://localhost:3000
+Now the app is running in your browser.
+To test the electron application, first, edit the url in your electron/main.js file. On line 10, you'll see the URL you need for local testing. Save your modifications and go back to your terminal. Let the node server run and open up a new terminal window. Go to your electron folder and run the following command: `npm start`
+If everyting was fine, your electron app should start in a few seconds.
 
-create ph app - you need to ask for write access
-heroku settings
+# Run the app on a Heroku
+To run the application on Heroku, follow these instructions: [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
+Don't forget to add your environment variables as [Config Vars](https://devcenter.heroku.com/articles/config-vars).
+If your app is successfully running on Heroku, you can change back the URL in your electron/main.js file to the URL of your Heroku instance.
+
+# Build the electron app
