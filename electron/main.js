@@ -5,9 +5,9 @@ const os = require('os')
 let window = null
 let tray = null
 
-// to locally test your application change the URL to http://localhost:3001 - this is where the dev version of your react app runs
+// to locally test your application change the URL to http://localhost:3000 - this is where the dev version of your react app runs
 const url = "https://maker-goals-menubar.herokuapp.com/"
-// const url = "http://localhost:3001"
+// const url = "http://localhost:3000"
 
 if (os.platform() == "darwin") {
   // macOS
